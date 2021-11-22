@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class DescriptionController {
     @GetMapping("/description")
     public String postcardName (Model model) {
-        model.addAttribute("name", "Today`s your day!");
+        model.addAttribute("name", "Favourite moments!");
         return "description";
     }
 
     @GetMapping("/")
     public String init(Model model) {
-        model.addAttribute("name", "Kate");
+        model.addAttribute("name", "Nataliia");
         return "index.html";
     }
 
     @GetMapping("/index")
     public String initIndex(Model model) {
-        model.addAttribute("name", "Kate");
+        model.addAttribute("name", "Nataliia");
         return "index.html";
     }
 }

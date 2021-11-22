@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Description</title>
+    <style>
+        body {
+            background: #8DB58F;
+        }
+        .class1 {
+            color: white;
+            -webkit-text-stroke: 1px white;
+            -webkit-text-fill-color: #582900;
+        }
+        .class2 {
+            color: white;
+            -webkit-text-stroke: 0.5px white;
+            -webkit-text-fill-color: #EA6D0C;
+        }
+        .leftimg {
+            float:left;
+            margin: 13px 30px 13px 13px;
+        }
+        .rightimg  {
+            float: right;
+            margin: 13px 13px 13px 13px;
+        }
+        ul {
+            padding-left: 4em;
+        }
+    </style>
 </head>
 <body>
-<h1>Description of the postcard</h1>
-<h2><p th:text="${name}"/> </h2>
-
-<a href="index">Back to main page</a>
+<p align="right" style="font-size:22px"><a href="index"><font color="black">Back to main page</font></a>
+<h1 align="center" style="font-size:60px; margin-top: 0.01em;" class="class1">Description of the album</h1>
+<img src="https://www.formula-vdohnovenia.com/wp-content/uploads/bb-plugin/cache/AB605E7A-D1D9-4E9A-A44F-2FB9B5B3961C-portrait.jpeg" width="450" height="500" class="leftimg">
+<img src="https://www.formula-vdohnovenia.com/wp-content/uploads/bb-plugin/cache/71040002-912F-4370-BD0B-0727ECE63C9B-portrait.jpeg" width="450" height="500" align="right" class="rightimg">
+<h1 style="font-size:40px" class="class2"><p align="center" th:text="${name}"/> </h1>
+<ul>
+    <li align="center" style="font-size:25px; margin-top: 3em; margin-button: 3em"><strong> &nbsp; This autumn album will help you keep the warmest family memories of the current season!</strong></li>
+    <li align="center" style="font-size:25px; margin-top: 3em; margin-button: 3em"><strong> &nbsp; Each page of the album is designed to store photographs and memorabilia.</strong></li>
+    <li align="center" style="font-size:25px; margin-top: 3em; margin-button: 3em"><strong> &nbsp; Exquisite decor complements the overall composition of the entire album and creates an incredible atmosphere of comfort that will resonate with your photographs!</strong></li>
+</ul>
 </body>
 </html>
