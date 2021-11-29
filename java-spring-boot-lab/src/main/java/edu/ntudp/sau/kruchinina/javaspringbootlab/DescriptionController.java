@@ -14,13 +14,11 @@ public class DescriptionController {
 
     @GetMapping("/")
     public String init(Model model) {
-        model.addAttribute("name", "Nataliia");
         return "index.html";
     }
 
     @GetMapping("/index")
     public String initIndex(Model model) {
-        model.addAttribute("name", "Nataliia");
         return "index.html";
     }
 }
